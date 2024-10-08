@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: lufga;
+}
+.main {
+  /* width: 100%;
+  height: 100%; */
+  position: relative;
+}
+.page1 {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+.textbox {
+  width: fit-content;
+  height: fit-content;
+  /* background-color: red; */
+  /* padding: 1vh 1vw; */
+  overflow: hidden;
+  color: #212121;
+}
+.textbox h1 {
+  font-size: 2.5vw;
+}
+.textbox2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30vw;
+  left: 4vw;
+  /* background-color: blue; */
+  gap: 0.3vw;
+}
+.textbox3 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 12vw;
+  right: 5vw;
+  /* background-color: blue; */
+  gap: 0.3vw;
+}
+.elem {
+  /* background-color: yellow; */
+  overflow: hidden;
+}
+.textbox2 h3,
+.textbox3 h3 {
+  /* background-color: red; */
+  font-size: 1.09vw;
+}
+.container {
+  position: relative;
+  min-width: 23%;
+  min-height: 60%;
+  overflow: hidden;
+  /* border: 2px solid black; */
+}
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.box1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow: hidden;
+}
+.box2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(https://images.unsplash.com/photo-1517191434949-5e90cd67d2b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGxhbnR8ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+/* .page2 {
+  width: 100%;
+  height: 100vh;
+  background-color: crimson;
+} */
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    height: 95%;
+    /* background-color: blue; */
+  }
+  .textbox h1 {
+    font-size: 6.5vw;
+  }
+  .textbox2 {
+    top: 65vw;
+    left: 5vw;
+    z-index: 9;
+  }
+  .textbox2 h3 {
+    font-size: 1.9vw;
+  }
+  .textbox3 {
+    top: 30vw;
+    right: 5vw;
+    z-index: 999;
+    text-align: right;
+  }
+  .textbox3 h3 {
+    font-size: 1.9vw;
+  }
+}
